@@ -1,0 +1,8 @@
+services:
+  rust:
+    image: rust:1.76.0
+    volumes:
+      - .:/pingora
+    working_dir: /pingora
+    environment:
+      - USER=test
